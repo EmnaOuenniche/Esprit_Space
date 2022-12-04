@@ -68,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="22/11/2022" />
+                android:text="29/11/2022" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,6 +87,36 @@
                 app:cornerRadius="10dp" />
 
         </TableRow>
+
+
+        <TableRow android:background="#F0F7F7" android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="22/11/2022" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="" />
+
+        <android.widget.Button
+            android:id="@+id/view_pdf_btn2"
+            android:layout_width="70dp"
+            android:layout_height="48dp"
+            android:background="#ECECEC"
+            android:icon="@drawable/ic_download"
+            android:text="@string/view"
+            android:textColor="#880E0E"
+            android:textSize="15sp"
+            app:cornerRadius="10dp" />
+
+        </TableRow>
+
+
+
         <TableRow android:background="#F0F7F7" android:padding="5dp">
 
             <TextView
@@ -99,6 +129,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
+
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn3"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
@@ -114,6 +155,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn4"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
@@ -130,6 +181,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn5"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
@@ -145,7 +206,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="" />
+                android:text=""/>
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn6"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
@@ -163,6 +234,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn7"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
@@ -179,6 +260,16 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="" />
+            <android.widget.Button
+                android:id="@+id/view_pdf_btn8"
+                android:layout_width="70dp"
+                android:layout_height="48dp"
+                android:background="#ECECEC"
+                android:icon="@drawable/ic_download"
+                android:text="@string/view"
+                android:textColor="#880E0E"
+                android:textSize="15sp"
+                app:cornerRadius="10dp" />
 
 
         </TableRow>
