@@ -1,5 +1,6 @@
 package tn.esprit.esprit_space.views
 
+import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -54,14 +55,15 @@ class Accueil : AppCompatActivity() {
                 R.id.nav_home -> replaceFragment(homeFragmentInstance, it.title.toString())
                 R.id.nav_message -> replaceFragment(messagesFragmentInstance, it.title.toString())
 
-                
-
                 R.id.nav_sync -> replaceFragment(evaluationFragmentInstance, it.title.toString())
                 R.id.nav_trash -> replaceFragment(absencesFragmentInstance, it.title.toString())
-                R.id.nav_share -> replaceFragment(transportFragmentInstance, it.title.toString())
-                R.id.nav_login -> replaceFragment(settingsFragmentInstance, it.title.toString())
                 R.id.nav_rate_us -> replaceFragment(aboutFragmentInstance, it.title.toString())
+                R.id.nav_login -> replaceFragment(settingsFragmentInstance, it.title.toString())
+                R.id.nav_share -> {
+val Intent=Intent(this,MapsActivity::class.java)
+                startActivity(Intent)}
             }
+
 
             true
 
@@ -100,9 +102,6 @@ class Accueil : AppCompatActivity() {
 
         return super.onOptionsItemSelected(item)
     }
-
-
-
 
 }
 

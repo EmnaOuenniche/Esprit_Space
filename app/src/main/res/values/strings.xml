@@ -44,5 +44,6 @@
     <string name="about_us">LÉcole supérieure privée d ingénierie et de technologie ou ESPRIT est une école d ingénieurs privée de Tunisie basée à l Ariana et agréée par le ministère de l Enseignement supérieur et de la Recherche scientifique. ESPRIT a également une branche école de commerce, la ESPRIT Business School</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>

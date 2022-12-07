@@ -18,6 +18,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.Toast
 import tn.esprit.esprit_space.models.User
 import tn.esprit.esprit_space.views.Accueil
@@ -66,7 +68,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
+
     }
+
+
     private fun doLogin(){
         if (validate()){
 
@@ -134,5 +139,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-
 }
+
+

@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/img_1" />
+        app:srcCompat="@drawable/kisspng_esprit_higher_school_of_communication_of_tunis_con_emam_5b42b64c541ab4_5414050515310987003445_removebg_preview" />
 
     <TextView
         android:id="@+id/contenuAbout"

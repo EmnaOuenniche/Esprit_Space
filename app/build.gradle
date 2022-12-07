@@ -36,6 +36,9 @@ android {
         jvmTarget = '1.8'
     }
     namespace 'tn.esprit.esprit_space'
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 
