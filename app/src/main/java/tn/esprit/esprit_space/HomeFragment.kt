@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,6 +38,24 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //WebView1: WebView = view.findViewById(R.id.WebView1)
+        WebView1.webViewClient = object : WebViewClient() {
+            override fun shouldOverrideUrlLoading(
+                view: WebView,
+                url: String
+            ): Boolean {
+                view.loadUrl(url)
+                return true
+            }}
+
+        WebView1.loadUrl("https://facebook.com/esprit.tn/posts/")
+        WebView1.settings.javaScriptEnabled = true
+        WebView1.settings.allowContentAccess = true
+        WebView1.settings.domStorageEnabled = true
+        WebView1.settings.useWideViewPort = true
     }
 
     companion object {

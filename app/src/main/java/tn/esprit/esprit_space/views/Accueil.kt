@@ -46,6 +46,9 @@ class Accueil : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val fragment = supportFragmentManager.beginTransaction()
+        fragment.replace(R.id.frameLayout,HomeFragment()).commit()
+
         navView.setNavigationItemSelectedListener {
 
             it.isChecked = true
@@ -104,18 +107,3 @@ val Intent=Intent(this,MapsActivity::class.java)
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
