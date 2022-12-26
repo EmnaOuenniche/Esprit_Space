@@ -3,8 +3,10 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.*
+import tn.esprit.esprit_space.models.Absences
 import tn.esprit.esprit_space.models.Notes
 import tn.esprit.esprit_space.models.User
+import tn.esprit.esprit_space.models.Classe
 
 interface ApiInterface {
     @POST("user/login")
@@ -15,8 +17,11 @@ interface ApiInterface {
     @POST("notes/getUserNotes")
     fun getUserNotes(@Body map : HashMap<String, String> ): Call<Notes>
 
+    @POST("absence/getUserAbs")
+    fun getUserAbs(@Body map : HashMap<String, String> ): Call<Absences>
+
     companion object {
-        var BASE_URL = "http://192.168.1.103:5000/" //change with ur localhost
+        var BASE_URL = "http://192.168.100.48:5000/" //change with ur localhost
         fun create() : ApiInterface {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())

@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="accueil">Hii</string>
     <string name="app_name">Esprit_Space</string>
 
@@ -45,5 +45,16 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="exam">Exam</string>
+    <string name="cc">CC</string>
+    <string name="view_results">View all your results here:</string>
+
+
+    <string name="justif">Justification</string>
+    <string name="abs_list">Absences list:</string>
+
+    <string name="logoutTitle">Logout</string>
+    <string name="logoutMessage">Are you sure you want to logout ?</string>
 
 </resources>

@@ -73,15 +73,19 @@ class EvaluationFragment : Fragment(R.layout.fragment_evaluation) {
                     val notes = response.body()
                     if (notes != null) {
                         Log.e("Notes : ", notes.toString())
-                        resultat.setText("Matiére : "+notes.matiere+"\nCC : "+notes.cc+"\nExamen : "+notes.examen)
+                        row_subj1.setText(notes.matiere)
+                        row_cc1.setText(notes.cc)
+                        row_exam1.setText(notes.examen)
                     } else {
 
-                        resultat.setText(notes.toString())
+                        row_subj1.setText(notes.toString())
+                        row_cc1.setText(notes.toString())
+                        row_exam1.setText(notes.toString())
                     }
                 }
 
                 override fun onFailure(call: Call<Notes>, t: Throwable) {
-                    Toast.makeText(context, "Connexion error!", Toast.LENGTH_SHORT).show()
+                    TODO("Not yet implemented")
                 }
 
             })

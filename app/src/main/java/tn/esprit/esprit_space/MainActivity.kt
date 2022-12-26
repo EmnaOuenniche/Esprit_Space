@@ -21,6 +21,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import tn.esprit.esprit_space.models.User
 import tn.esprit.esprit_space.views.Accueil
 import tn.esprit.esprit_space.views.SignUp
@@ -137,6 +138,30 @@ class MainActivity : AppCompatActivity() {
         }
 
         return true
+    }
+
+
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        when(item.itemId){
+
+            R.id.mLogout ->{
+                val builder = AlertDialog.Builder(this)
+                builder.setTitle(getString(R.string.logoutTitle))
+                builder.setMessage(R.string.logoutMessage)
+                builder.setPositiveButton("Yes"){ dialogInterface, which ->
+                    getSharedPreferences(PREF_NAME, MODE_PRIVATE).edit().clear().apply()
+                    finish()
+                }
+                builder.setNegativeButton("No"){dialogInterface, which ->
+                    dialogInterface.dismiss()
+                }
+                builder.create().show()
+            }
+        }
+
+        return super.onOptionsItemSelected(item)
     }
 
 }
