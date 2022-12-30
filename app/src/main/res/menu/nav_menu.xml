@@ -5,25 +5,25 @@
 
     <group android:checkableBehavior="single">
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/home"/>
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home"/>
 
-    <item
-        android:id="@+id/nav_message"
-        android:icon="@drawable/ic_emploi"
-        android:title="@string/message"/>
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/ic_emploi"
+            android:title="@string/message"/>
 
-    <item
-        android:id="@+id/nav_sync"
-        android:icon="@drawable/ic_evaluation"
-        android:title="@string/sync"/>
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_evaluation"
+            android:title="@string/sync"/>
 
-    <item
-        android:id="@+id/nav_trash"
-        android:icon="@drawable/ic_absence"
-        android:title="@string/trash"/>
+        <item
+            android:id="@+id/nav_trash"
+            android:icon="@drawable/ic_absence"
+            android:title="@string/trash"/>
 
         <item
             android:id="@+id/nav_share"
@@ -39,10 +39,10 @@
 
             <group>
 
-            <item
-                android:id="@+id/nav_login"
-                android:icon="@drawable/ic_settings"
-                android:title="@string/settings"/>
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/settings"/>
             </group>
 
         </menu>
@@ -55,10 +55,27 @@
             <group>
 
 
-            <item
-                android:id="@+id/nav_rate_us"
-                android:icon="@drawable/ic_about_us"
-                android:title="@string/rate"/>
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/ic_about_us"
+                    android:title="@string/rate"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+
+    <item android:title="User">
+
+        <menu>
+            <group>
+
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_about_us"
+                    android:title="@string/logout"/>
 
             </group>
         </menu>

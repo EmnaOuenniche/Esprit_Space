@@ -11,6 +11,7 @@ import tn.esprit.esprit_space.models.Classe
 interface ApiInterface {
     @POST("user/login")
     fun login(@Body map : HashMap<String, String> ): Call<User>
+
     @POST("user/signup")
     fun signup(@Body map : HashMap<String, String> ): Call<User>
 
@@ -20,8 +21,15 @@ interface ApiInterface {
     @POST("absence/getUserAbs")
     fun getUserAbs(@Body map : HashMap<String, String> ): Call<Absences>
 
+    @POST("user/getUserEmail")
+    fun getUserEmail(@Body map : HashMap<String, String> ): Call<User>
+
+
+    @POST("classe/getUserClasses")
+    fun getUserClasses(@Body map : HashMap<String, String> ): Call<Classe>
+
     companion object {
-        var BASE_URL = "http://192.168.100.48:5000/" //change with ur localhost
+        var BASE_URL = "http://192.168.211.24:5000/" //change with ur localhost
         fun create() : ApiInterface {
             val retrofit = Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())

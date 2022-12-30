@@ -2,11 +2,11 @@ package tn.esprit.esprit_space.models
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
-import java.util.*
 
-data class Classe ( @SerializedName("_id") val id : String,
-@SerializedName("classe") val clas : String,
-@SerializedName("iduser") var iduser : String,
-@SerializedName("createdAt") val createdAt : Date,
-@SerializedName("updatedAt") val updatedAt : Date,
-) : Serializable
+data class Classe(
+    @SerializedName("_id") val id : String,
+    @SerializedName("clas") val clas : String,
+    @SerializedName("name") val name : String,
+    @SerializedName("iduser") var iduser : String,
+
+    ): Serializable

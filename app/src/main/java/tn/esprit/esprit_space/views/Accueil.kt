@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.Toast
 //import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AlertDialog
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
@@ -65,6 +66,19 @@ class Accueil : AppCompatActivity() {
                 R.id.nav_share -> {
 val Intent=Intent(this,MapsActivity::class.java)
                 startActivity(Intent)}
+                R.id.nav_logout -> {
+                    val builder = AlertDialog.Builder(this)
+                    builder.setTitle(getString(R.string.logoutTitle))
+                    builder.setMessage(R.string.logoutMessage)
+                    builder.setPositiveButton("Yes"){ dialogInterface, which ->
+                        getSharedPreferences(PREF_NAME, MODE_PRIVATE).edit().clear().apply()
+                        finish()
+                    }
+                    builder.setNegativeButton("No"){dialogInterface, which ->
+                        dialogInterface.dismiss()
+                    }
+                    builder.create().show()
+                }
             }
 
 
